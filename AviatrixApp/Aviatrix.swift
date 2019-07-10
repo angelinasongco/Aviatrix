@@ -1,4 +1,4 @@
-//
+///Users/apple/Desktop/swifter_duster/AviatrixApp.xcodeproj
 //  Aviatrix.swift
 //  AviatrixApp
 //
@@ -9,11 +9,16 @@
 import Foundation
 
 class Aviatrix {
-    
-    func start() -> Bool {
-        return true
+  var running  = false
+    var author = " "
+    init(authorName : String) {
+        author = authorName
     }
-    
+    func start() -> Bool {
+        running = true
+        return running
+    }
+  
     func refuel() {
         
     }
@@ -30,3 +35,4 @@ class Aviatrix {
        return ["St. Louis"]
     }
 }
+
